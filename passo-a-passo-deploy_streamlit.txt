@@ -1,0 +1,48 @@
+########################
+Correções para o deploy
+########################
+
+1. Criar novo ambiente python na maquina local, utilizando o arquivo requirements.txt. Segue o passo-a-passo:
+	1.1 no terminal, chegar até o diretorio onde encontra-se o arquivo requirements.txt
+	utilizando o comando cd <path do diretório>. Se o path possuir espaço, lembre-se de usar aspas:
+	cd "<path do diretório>"
+
+	1.2 para quem utiliza Anaconda:
+		1.2.1 conda create -n streamlitcloudenv python=3.10
+		1.2.2 confirmar com "Y" quando solicitado
+		1.2.3 ativar o ambiente com o comando: 
+			conda activate streamlitcloudenv
+		1.2.4 no terminal aparecerá (streamlitcloudenv) a esquerda de cada linha
+
+	1.3 para quem não utiliza Anaconda:
+		1. python -m venv streamlitcloudenv
+		2. confirmar com "Y" quando solicitado
+		3. ativar o ambiente com o comando:
+			a. no Windows:
+				streamlitcloudenv\Scripts\activate
+			b. no Mac ou Linux:
+				source streamlitcloudenv/bin/activate
+
+2. uma vez ativado o novo ambiente, digite dir ou ls para confirmar que é possível listar o requirements.txt
+
+3. instalar as bibliotecas listadas no requirements.txt, através do comando:
+	pip install -r requirements.txt
+
+4. rodar novamente o notebook de treinamento do pycaret: Case_Ifood-Colearning_Parte4.ipynb,
+garantido que esteja sendo usado o novo ambiente python (streamlitcloudenv). Um novo arquivo .pkl será exportado.
+
+5. atualizar/crir o repositório do github com os novos arquivos requirement.txt e pickle_rf_pycaret.pk (passo-a-passo para o github disponível no arquivo git_steps.txt)
+
+6. acessar o link https://share.streamlit.io/, criar uma conta, e então clicar em "Create app", no canto superior direito:
+	6.1 escolha a opção: "Deploy a public app from Github"
+	6.2 informe o link do repositório no github (exclua o termo ".git" do final do link
+	6.3 informe a branch do repositório onde o projeto foi exportado (geralmente master ou main)
+	6.4 informe o nome do arquivo .py, no caso app_aula.py 
+	6.5 defina uma url para o app
+	6.6 clique am Advanced setting, depois selecione Python version: 3.10
+	6.7 clique em Deploy
+7. a partir deste momento a plataforma preparará um ambiente para receber o app, instalando o python e bibliotecas informadas no requirements.txt.
+
+8. acesse o url definido para o app.
+
+
