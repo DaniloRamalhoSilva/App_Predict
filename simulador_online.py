@@ -46,7 +46,7 @@ def roda_online():
     st.write("Preencha todos os campos antes de rodar a simulação.")
 
     # Preenche valores de teste somente na primeira execução
-    fill_test_inputs()
+    #fill_test_inputs()
 
     # 1) Campanhas
     with st.expander("Campanhas", expanded=True):
