@@ -5,7 +5,6 @@ Este projeto é um aplicativo web interativo desenvolvido em **Streamlit 1.45.0*
 - **Analytics**: comparação interativa (boxplots, histogramas) das distribuições de _features_ para clientes preditos como 0×1, recalculadas sempre que o threshold mudar;
 - **Deploy**: pronto para publicação no Streamlit Cloud, com repositório GitHub integrado.
 
----
 
 ## Integrantes do Grupo
    -  Nome: Danilo Ramalho Silva | RM: 555183
@@ -13,12 +12,11 @@ Este projeto é um aplicativo web interativo desenvolvido em **Streamlit 1.45.0*
    -  Nome: João Vitor Pires da Silva | RM: 556213
    -  Nome: Pablo Menezes Barreto | RM: 556389
    -  Nome: Tiago Toshio Kumagai Gibo | RM: 556984
-conteudo do projeto:
-  1. URL do app no Streamlit Cloud: https://share.streamlit.io/
-  2. Link do repositório GitHub: https://github.com/DaniloRamalhoSilva/App_Predict
-  3. Link apresentação (09/05/2025, até 15 minutos): 
 
----
+   Acesso ao [app](https://share.streamlit.io/) no Streamlit Cloud.  
+   Acesso ao [repositório](https://github.com/DaniloRamalhoSilva/App_Predict) do GitHub  
+   Acesso a [apresentação]() (09/05/2025, até 15 minutos)  
+
 
 ## Funcionalidades Detalhadas
 1. **Menu Lateral**
@@ -46,7 +44,6 @@ conteudo do projeto:
    - **Boxplots** e **Histogramas** para cada _feature_, comparando classes 0×1;
    - Gráficos re-renderizados sempre que o threshold for alterado, refletindo o novo particionamento das classes.
 
----
 
 ## Estrutura de Pastas
 ```plaintext
@@ -58,14 +55,12 @@ conteudo do projeto:
 ├── README.md              # Este arquivo
 ```
 
----
 
 ## Pré-requisitos
 - **Python 3.10
 - **Git**
 - Conta gratuita no **Streamlit Cloud** (para deploy)
 
----
 
 ## Instalação e Setup Local
 1. **Clone o repositório**
@@ -95,7 +90,6 @@ conteudo do projeto:
    > pycaret[classification]==3.0.1
    > openai==1.77.0
    > python-dotenv
----
 
 ## Como Rodar o Projeto
 No diretório do projeto ativo no virtualenv, execute:
@@ -105,7 +99,6 @@ streamlit run app_aula.py
 - O navegador abrirá automaticamente em `http://localhost:8501`.
 - Navegue pelo menu lateral para testar as abas **Offline**, **Online**, **Analytics** e **Sobre**.
 
----
 
 ## Deploy no Streamlit Cloud
 1. **Crie um repositório** no GitHub e faça push de todo o código.
@@ -117,9 +110,9 @@ streamlit run app_aula.py
 4. Clique em **Deploy**.
 5. Copie a URL gerada e compartilhe com o grupo.
 
----
+
 
 ## Licença
 Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
 
----
+
