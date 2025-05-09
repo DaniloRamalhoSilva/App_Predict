@@ -8,10 +8,7 @@ Este projeto é um aplicativo web interativo desenvolvido em **Streamlit 1.45.0*
 
 ## Integrantes do Grupo
    -  Nome: Danilo Ramalho Silva | RM: 555183
-   -  Nome: Israel Dalcin Alves Diniz | RM: 554668
-   -  Nome: João Vitor Pires da Silva | RM: 556213
    -  Nome: Pablo Menezes Barreto | RM: 556389
-   -  Nome: Tiago Toshio Kumagai Gibo | RM: 556984
    -  Nome: Matheus Hungaro | RM: 555677
 
    Acesso ao [app](https://share.streamlit.io/) no Streamlit Cloud.  
